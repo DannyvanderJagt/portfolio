@@ -17,7 +17,5 @@
   },
   "homepage": "https://github.com/DannyvanderJagt/portfolio",
   "dependencies": {
-    "express": "^4.12.3",
-    "express-device": "^0.3.11"
   }
 }
