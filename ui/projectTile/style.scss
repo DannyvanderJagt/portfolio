@@ -1,0 +1,39 @@
+.tile-container{
+  margin: 0px auto;
+  width: 100%;
+  text-align: center;
+
+  // transition: all .3s;
+
+  -webkit-column-count: 3;
+  -webkit-column-gap: 0;
+
+  @media (max-width: 1220px) {
+    -webkit-column-count: 2;
+    width: 620px;
+  }
+  @media (max-width: 820px) {
+    -webkit-column-count: 1;
+    width: 320px;
+  }
+  @media (min-width: 820px) {
+    width: 940px;
+  }
+}
+
+.project-tile{
+  width: 80%;
+  height: 500px;
+  margin: 10px;
+  background: rgba(0,0,0,.2);
+
+  display: inline-block;
+
+  &.size-1{
+    height: 300px;
+  }
+
+  &.size-2{
+    height: 500px;
+  }
+}

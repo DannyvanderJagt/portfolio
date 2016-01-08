@@ -1,0 +1,71 @@
+<Config
+  title='Danny van der Jagt'
+/>
+
+<Navigation/>
+
+
+<Header
+  next={{
+    title: 'previous project',
+    href: '/previous-project'}}
+
+  previous={{
+    title: 'previous project',
+    href: '/previous-project'}}
+
+  background={{
+    image: '/assets/images/project_test_background.svg',
+    color: 'white'
+  }}>
+
+  <img className='project_test_header_image' src='/assets/images/project_test_header_image.png'/>
+  <img className='project_test_header_text' src='/assets/images/project_test_header_text.svg'/>
+
+</Header>
+
+<Content>
+
+  <Title
+    title='Roadmap'
+    description='From idea to project'
+  />
+
+  <Roadmap
+    startedOn="23 December 2015"
+    finishedOn="5 January 2016"
+    steps={[
+      ['Brainstorm', 1],
+      ['Sketches', 1],
+      ['UX/UI', 1],
+      ['Prototype', 1],
+      ['Logo', 1],
+      ['Design', 1],
+      ['Development', 0],
+      ['App', 0],
+      ['Review', 0]
+    ]}
+  />
+
+  <Title
+    title='Outlines'
+    description='The project'
+  />
+
+  <Paragraph>
+  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugia Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravid
+  </Paragraph>
+  
+
+  <Title
+    title='The App'
+    description='Usefull in every way'
+  />
+
+  <Iphone size={4} image='/assets/images/project_test_iphone_app.png'/>
+  <Iphone size={3} image='/assets/images/project_test_iphone_app.png'/>
+  <Iphone size={2} image='/assets/images/project_test_iphone_app.png'/>
+  <Iphone size={1} image='/assets/images/project_test_iphone_app.png'/>
+
+</Content>
+

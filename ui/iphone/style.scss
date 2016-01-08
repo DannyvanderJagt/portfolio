@@ -1,0 +1,50 @@
+.iphone{
+  background-size: 100%;
+  display: inline-block;
+  
+  & > img{
+    display: block;
+  }
+
+  &.size-1{
+    width: 100px;
+    height: 180px;
+
+    & > img{
+      width: 64px;
+      margin: 33px 0px 0px 21px;
+    }
+  }
+
+  &.size-2{
+    width: 152px;
+    height: 255px;
+
+    & > img{
+      width: 97px;
+      margin: 50px 0px 0px 32px;
+    }
+  }
+
+  &.size-3{
+    width: 200px;
+    height: 350px;
+    margin-bottom: -10px;
+
+    & > img{
+      width: 128px;
+      margin: 66px 0px 0px 42px;
+    }
+  }
+
+  &.size-4{
+    width: 300px;
+    height: 550px;
+    margin-bottom: -45px;
+
+    & > img{
+      width: 194px;
+      margin: 98px 0px 0px 62px;
+    }
+  }
+}

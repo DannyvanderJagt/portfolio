@@ -1,0 +1,16 @@
+h1{
+  font-size: 23px;
+  border-bottom: 1px solid rgba(0,0,0,.2);
+  color: rgba(0,0,0,.9);
+  padding: 25px 25px 15px 25px;
+  text-align: left;
+
+  & > .description{
+    font-size: 15px;
+    color: rgba(0,0,0,.5);
+    margin-left: 10px;
+  }
+
+  
+  
+}
