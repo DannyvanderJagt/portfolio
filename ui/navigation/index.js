@@ -48,7 +48,9 @@ class Navigation extends Telescope.Component{
       <div id='navigation' className={classes}>
 
         <div className='logo'>
-          <img src='/assets/images/logo.svg'/>
+          <a href='/'>
+            <img src='/assets/icons/logo.svg'/>
+          </a>
         </div>
 
         <div className='navigation'>

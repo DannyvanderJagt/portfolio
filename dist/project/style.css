@@ -71,7 +71,7 @@ a {
     display: inline-block;
     float: left;
     margin-left: 10px; }
-    #navigation > .logo > img {
+    #navigation > .logo > a > img {
       display: block;
       margin: 10px;
       width: 25px; }
@@ -81,7 +81,8 @@ a {
     margin: 0px;
     padding: 0px; }
   #navigation > .navigation {
-    display: inline-block; }
+    display: inline-block;
+    margin-right: -126px; }
     #navigation > .navigation > ul > li {
       display: inline-block;
       margin: 15px 10px;
@@ -97,7 +98,9 @@ a {
         height: 15px; }
   @media (max-width: 600px) {
     #navigation > .links {
-      display: none; } }
+      display: none; }
+    #navigation > .navigation {
+      margin-right: 0px; } }
 /* /Users/dannyvanderjagt/Github/portfolio/.cache/ui/Svg/style.css */body > .content {
   margin: 50px 10%;
   text-align: center; }
@@ -111,15 +114,12 @@ a {
   body > div > .homepage-header > .background-image {
     width: 100%; }
   body > div > .homepage-header > .content {
+    width: 100%;
+    height: 100%;
     position: absolute;
     text-align: center;
     top: 0px;
-    left: 0px; }
-    body > div > .homepage-header > .content > img {
-      display: inline-block; }
-  body > div > .homepage-header > .content {
-    width: 100%;
-    height: 100%;
+    left: 0px;
     max-height: 600px;
     overflow: hidden;
     font-size: 2em;
@@ -127,16 +127,25 @@ a {
     text-align: center; }
     body > div > .homepage-header > .content > .text {
       margin-top: 100px; }
-      body > div > .homepage-header > .content > .text > .name {
+      body > div > .homepage-header > .content > .text > .intro {
+        font-size: .8em; }
+      body > div > .homepage-header > .content > .text > .fill {
         margin-top: 20px;
-        font-size: 1em;
+        font-size: 1.2em;
         width: 100%;
         display: inline-block; }
+      body > div > .homepage-header > .content > .text > a > .button {
+        margin-top: 50px; }
+  @media (max-width: 300px) {
+    body > div > .homepage-header > .content .button {
+      margin-top: 15px !important; } }
   @media (max-width: 500px) {
     body > div > .homepage-header > .content {
       font-size: 1.4em; }
       body > div > .homepage-header > .content > .text {
-        margin-top: 20%; } }
+        margin-top: 15%; }
+      body > div > .homepage-header > .content .button {
+        margin-top: 30px !important; } }
   @media (min-width: 500px) and (max-width: 600px) {
     body > div > .homepage-header > .content {
       font-size: 1.8em; }
@@ -147,10 +156,10 @@ a {
           font-size: 1em;
           width: 100%;
           display: inline-block; } }
-  @media (min-width: 1000px) {
+  @media (min-width: 1200px) {
     body > div > .homepage-header > .background-image {
       margin-top: -20%; } }
-  @media (min-width: 1300px) {
+  @media (min-width: 1400px) {
     body > div > .homepage-header > .background-image {
       margin-top: -30%; } }
 
@@ -186,7 +195,7 @@ body > div > .overlay {
       font-size: 13px;
       margin-top: 5px;
       color: #4A90E2; }
-  @media (max-width: 700px) {
+  @media (max-width: 800px) {
     body > div > .overlay {
       margin-top: 0px;
       height: auto;
@@ -211,73 +220,285 @@ body > div > .overlay {
           font-size: 12px; } }
 /* /Users/dannyvanderjagt/Github/portfolio/.cache/ui/Button/style.css */.button {
   background: #4A90E2;
-  width: 100px;
+  width: auto;
   border-radius: 25px;
   font-size: 13px;
   font-weight: normal;
-  padding: 10px;
+  padding: 10px 20px;
   display: inline-block;
-  margin-top: 20px; }
+  margin-top: 20px;
+  color: white; }
 /* /Users/dannyvanderjagt/Github/portfolio/.cache/ui/Content/style.css */body > .content {
-  margin: 50px 10%;
+  margin: 50px auto;
   text-align: center;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  max-width: 840px; }
 /* /Users/dannyvanderjagt/Github/portfolio/.cache/ui/Title/style.css */h1 {
   font-size: 23px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   color: rgba(0, 0, 0, 0.9);
   padding: 25px 25px 15px 25px;
-  text-align: left; }
+  text-align: left;
+  max-width: 840px;
+  margin: 0px auto; }
   h1 > .description {
     font-size: 15px;
     color: rgba(0, 0, 0, 0.5);
     margin-left: 10px; }
-/* /Users/dannyvanderjagt/Github/portfolio/.cache/ui/ProjectTile/style.css */.tile-container {
-  margin: 0px auto;
-  margin-top: 20px;
-  width: 100%;
-  background: lightblue;
-  box-sizing: border-box;
-  -webkit-column-count: 3;
-  -webkit-column-gap: 0; }
-  @media (max-width: 1220px) {
-    .tile-container {
-      -webkit-column-count: 2;
-      width: 620px; } }
-  @media (max-width: 820px) {
-    .tile-container {
-      -webkit-column-count: 1;
-      width: 320px; } }
-  @media (min-width: 820px) {
-    .tile-container {
-      width: 940px; } }
-
-.project-tile {
-  width: 100%;
-  height: 500px;
-  margin: 10px;
-  background: rgba(0, 0, 0, 0.2);
-  display: inline-block; }
-  @media (max-width: 500px) {
-    .project-tile {
-      width: 80%; } }
-  .project-tile.size-1 {
-    height: 300px; }
-  .project-tile.size-2 {
-    height: 500px; }
-/* /Users/dannyvanderjagt/Github/portfolio/.cache/ui/Header/style.css */.showcase-image {
+/* /Users/dannyvanderjagt/Github/portfolio/.cache/ui/Showcase/style.css */body > div > .homepage-header {
   width: 100%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   max-height: 600px;
   overflow: hidden; }
-  .showcase-image > .background-image {
+  body > div > .homepage-header > * {
+    transition: all .2s; }
+  body > div > .homepage-header > .background-image {
     width: 100%; }
-  .showcase-image > .content {
+  body > div > .homepage-header > .content {
+    width: 100%;
+    height: 100%;
     position: absolute;
     text-align: center;
     top: 0px;
+    left: 0px;
+    max-height: 600px;
+    overflow: hidden;
+    font-size: 2em;
+    color: white;
+    text-align: center; }
+    body > div > .homepage-header > .content > .text {
+      margin-top: 100px; }
+      body > div > .homepage-header > .content > .text > .intro {
+        font-size: .8em; }
+      body > div > .homepage-header > .content > .text > .fill {
+        margin-top: 20px;
+        font-size: 1.2em;
+        width: 100%;
+        display: inline-block; }
+      body > div > .homepage-header > .content > .text > a > .button {
+        margin-top: 50px; }
+  @media (max-width: 300px) {
+    body > div > .homepage-header > .content .button {
+      margin-top: 15px !important; } }
+  @media (max-width: 500px) {
+    body > div > .homepage-header > .content {
+      font-size: 1.4em; }
+      body > div > .homepage-header > .content > .text {
+        margin-top: 15%; }
+      body > div > .homepage-header > .content .button {
+        margin-top: 30px !important; } }
+  @media (min-width: 500px) and (max-width: 600px) {
+    body > div > .homepage-header > .content {
+      font-size: 1.8em; }
+      body > div > .homepage-header > .content > .text {
+        margin-top: 100px; }
+        body > div > .homepage-header > .content > .text > .name {
+          margin-top: 20px;
+          font-size: 1em;
+          width: 100%;
+          display: inline-block; } }
+  @media (min-width: 1200px) {
+    body > div > .homepage-header > .background-image {
+      margin-top: -20%; } }
+  @media (min-width: 1400px) {
+    body > div > .homepage-header > .background-image {
+      margin-top: -30%; } }
+
+body > div > .overlay {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.5);
+  margin-top: -200px;
+  text-align: center; }
+  body > div > .overlay > * {
+    transition: all .2s; }
+  body > div > .overlay > .section {
+    width: 150px;
+    height: 150px;
+    background: rgba(255, 255, 255, 0.6);
+    display: inline-block;
+    margin: 20px;
+    padding: 0px 20px; }
+    body > div > .overlay > .section > .icon {
+      min-height: 40px;
+      background: red; }
+      body > div > .overlay > .section > .icon > img {
+        margin: 30px auto 20px auto; }
+    body > div > .overlay > .section > .title {
+      width: 100%;
+      display: inline-block;
+      color: rgba(0, 0, 0, 0.8);
+      font-size: 18px; }
+    body > div > .overlay > .section > .subtitle {
+      width: 100%;
+      display: inline-block;
+      font-size: 13px;
+      margin-top: 5px;
+      color: #4A90E2; }
+  @media (max-width: 800px) {
+    body > div > .overlay {
+      margin-top: 0px;
+      height: auto;
+      margin: 0px;
+      padding: 0px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+      body > div > .overlay > .section {
+        width: 33%;
+        padding: 0px;
+        margin: 0px; } }
+  @media (max-width: 500px) {
+    body > div > .overlay {
+      height: auto; }
+      body > div > .overlay > .section {
+        height: auto;
+        margin: 0px 0px 20px 0px; }
+        body > div > .overlay > .section .icon > img {
+          width: 40%; }
+        body > div > .overlay > .section > .title {
+          font-size: 15px; }
+        body > div > .overlay > .section > .subtitle {
+          font-size: 12px; } }
+/* /Users/dannyvanderjagt/Github/portfolio/.cache/ui/ProjectTile/style.css */.tile-container {
+  margin: 0px auto;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  -webkit-column-count: 1;
+  -webkit-column-gap: 0; }
+  @media (max-width: 540px) {
+    .tile-container {
+      -webkit-column-count: 1;
+      width: 100%; } }
+  @media (min-width: 540px) and (max-width: 820px) {
+    .tile-container {
+      -webkit-column-count: 2;
+      width: 540px; } }
+  @media (min-width: 820px) {
+    .tile-container {
+      -webkit-column-count: 3;
+      width: 820px; } }
+
+.project-tile {
+  width: 250px;
+  height: 500px;
+  margin: 10px;
+  background: rgba(0, 0, 0, 0.2);
+  background-size: 100%;
+  background-position: center center;
+  display: inline-block; }
+  .project-tile.size-1 {
+    height: 300px; }
+  .project-tile.size-2 {
+    height: 500px; }
+  .project-tile > .category {
+    color: white;
+    border-bottom: 1px solid white;
+    margin: 20px 0px;
+    display: inline-block;
+    padding: 0px 0px 5px 0px;
+    font-size: 12px; }
+  .project-tile > .title {
+    width: 100%;
+    font-size: 30px;
+    text-align: left;
+    margin: 20px 20px 0px 20px;
+    color: white; }
+  .project-tile > .subtitle {
+    width: 100%;
+    font-size: 15px;
+    text-align: left;
+    margin: 10px 20px 20px 20px;
+    opacity: .8;
+    color: white; }
+  @media (max-width: 540px) {
+    .project-tile {
+      width: 80%; } }
+  @media (min-width: 540px) and (max-width: 820px) {
+    .project-tile {
+      width: default; } }
+  @media (min-width: 820px) {
+    .project-tile {
+      width: default; } }
+/* /Users/dannyvanderjagt/Github/portfolio/.cache/ui/Line/style.css */.line {
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.2);
+  max-width: 840px;
+  margin: 0px auto; }
+/* /Users/dannyvanderjagt/Github/portfolio/.cache/ui/SocialMediaBar/style.css */.social-media-bar {
+  width: 100%;
+  height: 40px;
+  padding: 40px 0px;
+  text-align: center; }
+  .social-media-bar span {
+    display: inline-block;
+    margin: 0px 10px; }
+  .social-media-bar svg {
+    height: 40px; }
+  @media (max-width: 600px) {
+    .social-media-bar svg {
+      width: 20px; } }
+/* /Users/dannyvanderjagt/Github/portfolio/.cache/ui/Me/style.css */body > .me {
+  width: 100%;
+  max-width: 700px;
+  height: 226px;
+  margin: 60px auto; }
+  body > .me > .image {
+    float: left;
+    margin-right: 40px; }
+    body > .me > .image > img {
+      border-radius: 2px;
+      display: inline-block; }
+  body > .me > .title {
+    font-size: 20px;
+    padding: 20px 0px 10px 0px; }
+  body > .me > .subtitle {
+    font-size: 15px;
+    padding: 0px 0px 20px 0px;
+    opacity: .7; }
+  body > .me > .description {
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: .5px; }
+  body > .me .button {
+    margin-right: 10px; }
+  body > .me a {
+    margin-top: 5px; }
+  body > .me svg {
+    height: 20px;
+    margin: 0px 0px -5px 10px; }
+  @media (max-width: 750px) {
+    body > .me {
+      text-align: center;
+      height: auto;
+      width: 80%; }
+      body > .me .image {
+        display: inline-block;
+        text-align: center;
+        float: none;
+        width: 100%;
+        margin: 0px 0px 30px 0px; } }
+/* /Users/dannyvanderjagt/Github/portfolio/.cache/ui/Footer/style.css */body > .footer {
+  width: 100%;
+  height: 10%;
+  max-height: 200px;
+  background-position: bottom center;
+  background-size: 100%;
+  margin-top: 40px;
+  opacity: .8; }
+/* /Users/dannyvanderjagt/Github/portfolio/.cache/ui/Header/style.css */body > .header {
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  max-height: 600px;
+  overflow: hidden; }
+  body > .header > .background-image {
+    width: 100%; }
+  body > .header > .content {
+    text-align: center;
+    top: 0px;
     left: 0px; }
-    .showcase-image > .content > img {
+    body > .header > .content > img {
       display: inline-block; }
 /* /Users/dannyvanderjagt/Github/portfolio/.cache/ui/Roadmap/style.css */.roadmap {
   margin: 40px 0px 20px 0px; }
@@ -302,7 +523,7 @@ body > div > .overlay {
         border: none;
         width: 20px;
         height: 20px;
-        background: url(/assets/images/done.svg); }
+        background: url(/assets/icons/done.svg); }
     .roadmap > .step > .graphic > .line {
       width: 30px;
       height: 1px;

@@ -12,7 +12,7 @@ module.exports = {
     },
     {
       title: 'About me',
-      href: '/me'
+      href: '/danny'
     },
   ],
 
@@ -20,7 +20,10 @@ module.exports = {
   socialmedia:{
     twitter: 'http://twitter.com/dannyvanderjagt',
     '500px': 'http://500px.com/dannyvanderjagt',
-    github: 'http://github.com/dannyvanderjagt'
+    github: 'http://github.com/dannyvanderjagt',
+    codepen: 'http://codepen.io/dannyvanderjagt',
+    medium: 'https://medium.com/@DannyvanderJagt',
+    linkedin: 'https://www.linkedin.com/in/danny-van-der-jagt-22854858'
   }
 
 

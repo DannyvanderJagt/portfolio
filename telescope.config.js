@@ -7,6 +7,7 @@ module.exports = {
   ],
 
   head:[
+    "<link href='https://fonts.googleapis.com/css?family=Cutive+Mono' rel='stylesheet' type='text/css'>",
     "<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>",
     '<meta name="viewport" content="width=device-width, initial-scale=1">'
   ],

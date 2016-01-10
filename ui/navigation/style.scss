@@ -40,7 +40,7 @@
     float: left;
     margin-left: 10px;
 
-    & > img{
+    & > a > img{
       display: block;
       margin: 10px;
       width: 25px;
@@ -56,6 +56,7 @@
 
   & > .navigation{
     display: inline-block;
+    margin-right: -126px;
     & > ul{
       & > li{
         display: inline-block;
@@ -83,6 +84,9 @@
   @media (max-width: 600px) {
     & > .links {
       display: none;
+    }
+    & > .navigation{
+      margin-right: 0px;
     }
   }
 }

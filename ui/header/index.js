@@ -21,7 +21,7 @@ class Header extends Telescope.Component{
     }
 
     return (
-      <div className='showcase-image' style={style}>
+      <div className='header' style={style}>
         {image}
         <div className='content'>
           {this.props.children}

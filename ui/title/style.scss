@@ -4,6 +4,8 @@ h1{
   color: rgba(0,0,0,.9);
   padding: 25px 25px 15px 25px;
   text-align: left;
+  max-width: 840px;
+  margin: 0px auto;
 
   & > .description{
     font-size: 15px;
@@ -11,6 +13,7 @@ h1{
     margin-left: 10px;
   }
 
+  
   
   
 }

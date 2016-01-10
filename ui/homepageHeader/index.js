@@ -16,31 +16,32 @@ class HomepageHeader extends Telescope.Component{
           {image}
           <div className='content'>
             <div className='text'>
-              Hi, I am
-              <br/>
-              <div className='name'>Danny van der Jagt</div>
-              <Button>See my work</Button>
+              <div className='intro'>Hi, I am</div>
+              <div className='fill'>Danny van der Jagt</div>
+              <a href='#my-latest projects'>
+                <Button>See my work</Button>
+              </a>
             </div>
           </div>
         </div>
         <div className='overlay'>
           <div className='section'>
             <span className='icon'>
-              <img src='/assets/images/coding_icon_set.png'/>
+              <img src='/assets/pages/index/coding_icon_set.png'/>
             </span>
             <span className='title'>Coding</span>
             <span className='subtitle'>Libraries and UI's</span>
           </div>
           <div className='section'>
             <span className='icon'>
-              <img src='/assets/images/design_icon_set.png'/>
+              <img src='/assets/pages/index/design_icon_set.png'/>
             </span>
             <span className='title'>Pixels</span>
             <span className='subtitle'>Icons and UI</span>
           </div>
           <div className='section'>
             <span className='icon'>
-              <img src='/assets/images/photography_icon_set.png'/>
+              <img src='/assets/pages/index/photography_icon_set.png'/>
             </span>
             <span className='title'>Coding</span>
             <span className='subtitle'>The beauty of life.</span>
