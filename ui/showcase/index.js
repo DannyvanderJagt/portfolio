@@ -10,10 +10,11 @@ import ProjectTile from '../projectTile';
 class Showcase extends Telescope.Component{
   render(){
     let Tiles = [];
-    
+
+    let category;
     Tiles = Projects.projects.map((project, pos) => {
-      project.category = Projects.categories[project.category];
-      return <ProjectTile {...project} key={pos}/>;
+      category = Projects.categories[project.category];
+      return <ProjectTile {...project} key={pos} category={category}/>;
     });
 
     return (

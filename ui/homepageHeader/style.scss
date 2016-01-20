@@ -1,4 +1,4 @@
-body > div{
+body > .homepage-header-container{
  
   & > .homepage-header{
     & > * {
@@ -15,7 +15,6 @@ body > div{
     
     & > .content{
       width: 100%;
-      height: 100%;
       position: absolute;
       text-align: center;
       top: 0px;

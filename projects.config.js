@@ -1,11 +1,12 @@
 module.exports = {
   categories:[
-    'Front-end',
-    'Back-end',
-    'Mobile',
-    'Photography',
-    'Design',
-    'IOT'
+    'Front-end', // 0
+    'Back-end', // 1
+    'Mobile', // 2 
+    'Photography', // 3
+    'Design', // 4
+    'IOT', // 5
+    'Article', // 6
   ],
   projects:[
     {
@@ -15,6 +16,8 @@ module.exports = {
       link: 'http://500px.com/dannyvanderjagt',
 
       // Tile details.
+      light: true,
+      border: false,
       height: "230px",
       button: "View",
       backgroundImage: '/assets/projects/emmen-zoo-1/tile-background.jpg'
@@ -26,9 +29,20 @@ module.exports = {
       link: 'http://500px.com/dannyvanderjagt',
 
       // Tile details.
+      light: true,
+      border: false,
       height: "230px",
       button: "View",
       backgroundImage: '/assets/projects/emmen-zoo-2/tile-background.jpg'
-    }
+    },
+    {
+      category: 6,
+      title: 'How to use Push nofication in React Native.',
+      subTitle: 'IOS',
+      link: 'https://medium.com/@DannyvanderJagt/how-to-use-push-notifications-in-react-native-41e8b14aadae',
+
+      // Tile details.
+      button: "View"
+    },
   ]
 };

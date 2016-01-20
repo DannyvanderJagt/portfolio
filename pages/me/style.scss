@@ -1,0 +1,48 @@
+.header-container{
+  height: 200px;
+}
+.me-image{
+  border-radius: 50%;
+  width: 150px;
+  margin: -75px auto 0px auto;
+  border: 5px solid white;
+
+}
+
+.me-title-container{
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  
+
+  & > .me-title{
+    font-size: 1.5em;
+  }
+
+  & > .me-subtitle{
+    font-size: 1em;
+  }
+
+  & > .me-born{
+    font-size: 1em;
+    margin: 20px auto 0px auto;
+    width: 150px;
+    border-top: 1px solid rgba(0,0,0,.2);
+    border-bottom: 1px solid rgba(0,0,0,.2);
+    padding: 10px;
+  }
+}
+
+.others{
+  width: 600px;
+  margin: 0px auto;
+  & > img{
+    height: 40px;
+    margin: 20px;
+    display: inline-block;
+  }
+}
+.others-title{
+  opacity: .5;
+  margin-bottom: 20px;
+}

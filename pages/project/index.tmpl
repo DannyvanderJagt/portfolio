@@ -2,29 +2,28 @@
   title='Danny van der Jagt'
 />
 
-<Navigation/>
+<Navigation light={true} background={false}/>
 
 
 <Header
-  next={{
-    title: 'previous project',
-    href: '/previous-project'}}
+  image="http://static1.squarespace.com/static/5468b375e4b02a69db2ebbb8/t/554a788fe4b09f04577ad5ef/1430943890109/nature+-+dawn+grass.jpeg?format=1500w">
 
-  previous={{
-    title: 'previous project',
-    href: '/previous-project'}}
-
-  background={{
-    image: '/assets/projects/test/header-background.svg',
-    color: 'white'
-  }}>
-
-  <img className='project_test_header_image' src='/assets/projects/test/project_test_header_image.png'/>
-  <img className='project_test_header_text' src='/assets/projects/test/project_test_header_text.svg'/>
+<img className='project_test_header_image' src='/assets/projects/test/project_test_header_image.png'/>
+<img className='project_test_header_text' src='/assets/projects/test/project_test_header_text.svg'/>
 
 </Header>
 
+
+
+
 <Content>
+   <Title
+    title='Suitcase'
+    description='My digital life in one app'
+  />
+  <Paragraph>
+  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+  </Paragraph>
 
   <Title
     title='Roadmap'
@@ -62,10 +61,18 @@
     description='Usefull in every way'
   />
 
-  <Iphone size={4} image='/assets/projects/test/project_test_iphone_app.png'/>
+  
   <Iphone size={3} image='/assets/projects/test/project_test_iphone_app.png'/>
-  <Iphone size={2} image='/assets/projects/test/project_test_iphone_app.png'/>
-  <Iphone size={1} image='/assets/projects/test/project_test_iphone_app.png'/>
+   <Iphone size={3} image='/assets/projects/test/project_test_iphone_app.png'/>
+  <Iphone size={3} image='/assets/projects/test/project_test_iphone_app.png'/>
+
 
 </Content>
 
+<Line/>
+<SocialMediaBar/>
+
+<Line/>
+<Me/>
+
+<Footer latestTiles background='http://static1.squarespace.com/static/5468b375e4b02a69db2ebbb8/t/554a788fe4b09f04577ad5ef/1430943890109/nature+-+dawn+grass.jpeg?format=1500w'/>

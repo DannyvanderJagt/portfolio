@@ -1,0 +1,609 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+img {
+  display: block; }
+
+body, html {
+  font-family: 'Lato', sans-serif; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+/* /Users/dannyvanderjagt/Github/portfolio/.cache/ui/Navigation/style.css */#navigation {
+  position: fixed;
+  z-index: 100;
+  top: 0px;
+  left: 0px;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  transition: all .2s;
+  color: white; }
+  #navigation.mode-light {
+    background: rgba(255, 255, 255, 0.9);
+    color: black; }
+    #navigation.mode-light .icon {
+      fill: black; }
+  #navigation.mode-dark {
+    background: rgba(0, 0, 0, 0.5);
+    color: white; }
+    #navigation.mode-dark .icon {
+      fill: white; }
+  #navigation.no-background {
+    background: none;
+    border: none; }
+  #navigation > .logo {
+    display: inline-block;
+    float: left;
+    margin-left: 10px; }
+    #navigation > .logo > a > img {
+      display: block;
+      margin: 10px;
+      width: 25px; }
+  #navigation .list {
+    list-style: none;
+    display: inline-block;
+    margin: 0px;
+    padding: 0px; }
+  #navigation > .navigation {
+    display: inline-block;
+    margin-right: -126px; }
+    #navigation > .navigation > ul > li {
+      display: inline-block;
+      margin: 15px 10px;
+      font-size: 14px; }
+  #navigation > .links {
+    display: inline-block;
+    float: right;
+    margin-right: 10px; }
+    #navigation > .links > li {
+      display: inline-block;
+      margin: 15px 5px; }
+      #navigation > .links > li > a > span > svg {
+        height: 15px; }
+  @media (max-width: 600px) {
+    #navigation > .links {
+      display: none; }
+    #navigation > .navigation {
+      margin-right: 0px; } }
+/* /Users/dannyvanderjagt/Github/portfolio/.cache/ui/Svg/style.css */body > .content {
+  margin: 50px 10%;
+  text-align: center; }
+/* /Users/dannyvanderjagt/Github/portfolio/.cache/ui/HomepageHeader/style.css */body > .homepage-header-container > .homepage-header {
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  max-height: 600px;
+  overflow: hidden; }
+  body > .homepage-header-container > .homepage-header > * {
+    transition: all .2s; }
+  body > .homepage-header-container > .homepage-header > .background-image {
+    width: 100%; }
+  body > .homepage-header-container > .homepage-header > .content {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 0px;
+    left: 0px;
+    max-height: 600px;
+    overflow: hidden;
+    font-size: 2em;
+    color: white;
+    text-align: center; }
+    body > .homepage-header-container > .homepage-header > .content > .text {
+      margin-top: 100px; }
+      body > .homepage-header-container > .homepage-header > .content > .text > .intro {
+        font-size: .8em; }
+      body > .homepage-header-container > .homepage-header > .content > .text > .fill {
+        margin-top: 20px;
+        font-size: 1.2em;
+        width: 100%;
+        display: inline-block; }
+      body > .homepage-header-container > .homepage-header > .content > .text > a > .button {
+        margin-top: 50px; }
+  @media (max-width: 300px) {
+    body > .homepage-header-container > .homepage-header > .content .button {
+      margin-top: 15px !important; } }
+  @media (max-width: 500px) {
+    body > .homepage-header-container > .homepage-header > .content {
+      font-size: 1.4em; }
+      body > .homepage-header-container > .homepage-header > .content > .text {
+        margin-top: 15%; }
+      body > .homepage-header-container > .homepage-header > .content .button {
+        margin-top: 30px !important; } }
+  @media (min-width: 500px) and (max-width: 600px) {
+    body > .homepage-header-container > .homepage-header > .content {
+      font-size: 1.8em; }
+      body > .homepage-header-container > .homepage-header > .content > .text {
+        margin-top: 100px; }
+        body > .homepage-header-container > .homepage-header > .content > .text > .name {
+          margin-top: 20px;
+          font-size: 1em;
+          width: 100%;
+          display: inline-block; } }
+  @media (min-width: 1200px) {
+    body > .homepage-header-container > .homepage-header > .background-image {
+      margin-top: -20%; } }
+  @media (min-width: 1400px) {
+    body > .homepage-header-container > .homepage-header > .background-image {
+      margin-top: -30%; } }
+
+body > .homepage-header-container > .overlay {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.5);
+  margin-top: -200px;
+  text-align: center; }
+  body > .homepage-header-container > .overlay > * {
+    transition: all .2s; }
+  body > .homepage-header-container > .overlay > .section {
+    width: 150px;
+    height: 150px;
+    background: rgba(255, 255, 255, 0.6);
+    display: inline-block;
+    margin: 20px;
+    padding: 0px 20px; }
+    body > .homepage-header-container > .overlay > .section > .icon {
+      min-height: 40px;
+      background: red; }
+      body > .homepage-header-container > .overlay > .section > .icon > img {
+        margin: 30px auto 20px auto; }
+    body > .homepage-header-container > .overlay > .section > .title {
+      width: 100%;
+      display: inline-block;
+      color: rgba(0, 0, 0, 0.8);
+      font-size: 18px; }
+    body > .homepage-header-container > .overlay > .section > .subtitle {
+      width: 100%;
+      display: inline-block;
+      font-size: 13px;
+      margin-top: 5px;
+      color: #4A90E2; }
+  @media (max-width: 800px) {
+    body > .homepage-header-container > .overlay {
+      margin-top: 0px;
+      height: auto;
+      margin: 0px;
+      padding: 0px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+      body > .homepage-header-container > .overlay > .section {
+        width: 33%;
+        padding: 0px;
+        margin: 0px; } }
+  @media (max-width: 500px) {
+    body > .homepage-header-container > .overlay {
+      height: auto; }
+      body > .homepage-header-container > .overlay > .section {
+        height: auto;
+        margin: 0px 0px 20px 0px; }
+        body > .homepage-header-container > .overlay > .section .icon > img {
+          width: 40%; }
+        body > .homepage-header-container > .overlay > .section > .title {
+          font-size: 15px; }
+        body > .homepage-header-container > .overlay > .section > .subtitle {
+          font-size: 12px; } }
+/* /Users/dannyvanderjagt/Github/portfolio/.cache/ui/Button/style.css */.button {
+  background: #4A90E2;
+  width: auto;
+  border-radius: 25px;
+  font-size: 13px;
+  font-weight: normal;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-top: 20px;
+  color: white; }
+/* /Users/dannyvanderjagt/Github/portfolio/.cache/ui/Content/style.css */body > .content {
+  margin: 20px auto 50px auto;
+  padding: 0px 30px;
+  text-align: center;
+  box-sizing: border-box;
+  max-width: 840px; }
+/* /Users/dannyvanderjagt/Github/portfolio/.cache/ui/Title/style.css */h1 {
+  font-size: 23px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.9);
+  padding: 25px 25px 15px 25px;
+  text-align: left;
+  max-width: 840px;
+  margin: 0px auto; }
+  h1 > .description {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-left: 10px; }
+/* /Users/dannyvanderjagt/Github/portfolio/.cache/ui/Showcase/style.css *//* /Users/dannyvanderjagt/Github/portfolio/.cache/ui/ProjectTile/style.css */.tile-container {
+  margin: 0px auto;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  -webkit-column-count: 1;
+  -webkit-column-gap: 0; }
+  @media (max-width: 540px) {
+    .tile-container {
+      -webkit-column-count: 1;
+      width: 100%; } }
+  @media (min-width: 540px) and (max-width: 820px) {
+    .tile-container {
+      -webkit-column-count: 2;
+      width: 540px; } }
+  @media (min-width: 820px) {
+    .tile-container {
+      -webkit-column-count: 3;
+      width: 820px; } }
+
+.project-tile {
+  width: 250px;
+  margin: 10px;
+  background: white;
+  max-width: 300px;
+  background-size: 100%;
+  background-position: center center;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  color: rgba(0, 0, 0, 0.8);
+  text-align: center; }
+  .project-tile.no-border {
+    border: none; }
+  .project-tile.mode-light {
+    color: white; }
+    .project-tile.mode-light .category {
+      border-color: white; }
+  .project-tile .category {
+    line-height: 27px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+    margin: 20px 0px;
+    display: inline-block;
+    padding: 0px 0px 5px 0px;
+    font-size: 12px; }
+  .project-tile .button {
+    margin-bottom: 30px; }
+  .project-tile .text .title {
+    font-size: 20px;
+    text-align: left;
+    margin: 20px 20px 0px 20px; }
+  .project-tile .text .subtitle {
+    font-size: 15px;
+    text-align: left;
+    margin: 10px 20px 20px 20px;
+    opacity: .8; }
+  @media (max-width: 540px) {
+    .project-tile {
+      width: 80%; } }
+  @media (min-width: 540px) and (max-width: 820px) {
+    .project-tile {
+      width: default; } }
+  @media (min-width: 820px) {
+    .project-tile {
+      width: default; } }
+/* /Users/dannyvanderjagt/Github/portfolio/.cache/ui/Line/style.css */.line {
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.2);
+  max-width: 840px;
+  margin: 0px auto; }
+/* /Users/dannyvanderjagt/Github/portfolio/.cache/ui/SocialMediaBar/style.css */.social-media-bar {
+  width: 100%;
+  height: 40px;
+  padding: 40px 0px;
+  text-align: center; }
+  .social-media-bar span {
+    display: inline-block;
+    margin: 0px 10px; }
+  .social-media-bar svg {
+    height: 40px; }
+  @media (max-width: 600px) {
+    .social-media-bar svg {
+      width: 20px; } }
+/* /Users/dannyvanderjagt/Github/portfolio/.cache/ui/Me/style.css */body > .me {
+  width: 100%;
+  max-width: 700px;
+  height: 226px;
+  margin: 60px auto; }
+  body > .me > .image {
+    float: left;
+    margin-right: 40px; }
+    body > .me > .image > img {
+      border-radius: 2px;
+      display: inline-block; }
+  body > .me > .title {
+    font-size: 20px;
+    padding: 20px 0px 10px 0px; }
+  body > .me > .subtitle {
+    font-size: 15px;
+    padding: 0px 0px 20px 0px;
+    opacity: .7; }
+  body > .me > .description {
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: .5px; }
+  body > .me .button {
+    margin-right: 10px; }
+  body > .me a {
+    margin-top: 5px; }
+  body > .me svg {
+    height: 20px;
+    margin: 0px 0px -5px 10px; }
+  @media (max-width: 750px) {
+    body > .me {
+      text-align: center;
+      height: auto;
+      width: 80%; }
+      body > .me .image {
+        display: inline-block;
+        text-align: center;
+        float: none;
+        width: 100%;
+        margin: 0px 0px 30px 0px; } }
+/* /Users/dannyvanderjagt/Github/portfolio/.cache/ui/Footer/style.css */body > .footer {
+  width: 100%;
+  min-height: 10%;
+  background-position: bottom center;
+  background-size: 100%;
+  margin-top: 40px;
+  opacity: .8;
+  box-sizing: border-box;
+  text-align: center;
+  overflow: hidden; }
+  @media (max-width: 550px) {
+    body > .footer.with-tiles {
+      background-size: auto 100%; } }
+  body > .footer.with-tiles .project-tile {
+    border: 5px solid white;
+    background: rgba(0, 0, 0, 0.4);
+    height: 300px !important;
+    margin: 20px;
+    padding: 0px;
+    display: inline-table; }
+    body > .footer.with-tiles .project-tile .text {
+      height: 40%; }
+    @media (max-width: 910px) {
+      body > .footer.with-tiles .project-tile:nth-child(3) {
+        display: none; } }
+    @media (max-width: 610px) {
+      body > .footer.with-tiles .project-tile:nth-child(2) {
+        display: none; } }
+/* /Users/dannyvanderjagt/Github/portfolio/.cache/ui/Header/style.css */body > .header-container {
+  overflow: hidden; }
+  body > .header-container > .header {
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    max-height: 500px;
+    overflow: hidden; }
+    body > .header-container > .header > * {
+      transition: all .2s; }
+    body > .header-container > .header > .background-image {
+      width: 100%; }
+    @media (min-width: 1200px) {
+      body > .header-container > .header > .background-image {
+        margin-top: -20%; } }
+    @media (min-width: 1400px) {
+      body > .header-container > .header > .background-image {
+        margin-top: -30%; } }
+  body > .header-container > .overlay {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin-top: -300px;
+    text-align: center; }
+    body > .header-container > .overlay > * {
+      transition: all .2s; }
+    @media (max-width: 700px) {
+      body > .header-container > .overlay {
+        height: 200px;
+        margin-top: -200px; } }
+    @media (max-width: 400px) {
+      body > .header-container > .overlay {
+        height: 150px;
+        margin-top: -150px; } }
+/* /Users/dannyvanderjagt/Github/portfolio/.cache/ui/Paragraph/style.css */.paragraph {
+  text-align: left;
+  box-sizing: border-box; }
+  .paragraph > .split {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 50%;
+    padding: 20px; }
+  @media (max-width: 800px) {
+    .paragraph > .split {
+      width: 100%; } }
+/* /Users/dannyvanderjagt/Github/portfolio/.cache/ui/Roadmap/style.css */.roadmap {
+  margin: 40px 0px 20px 0px; }
+  .roadmap > .time {
+    margin: 20px;
+    font-size: 15px;
+    line-height: 30px; }
+    .roadmap > .time > .bold {
+      font-weight: bold; }
+  .roadmap > .step {
+    width: 80px;
+    display: inline-block;
+    margin: 20px 0px;
+    text-align: left; }
+    .roadmap > .step > .graphic > .dot {
+      width: 18px;
+      height: 18px;
+      border-radius: 20px;
+      border: 1px solid rgba(0, 0, 0, 0.5);
+      display: inline-block; }
+      .roadmap > .step > .graphic > .dot.done {
+        border: none;
+        width: 20px;
+        height: 20px;
+        background: url(/assets/icons/done.svg); }
+    .roadmap > .step > .graphic > .line {
+      width: 30px;
+      height: 1px;
+      background: rgba(0, 0, 0, 0.3);
+      display: inline-block;
+      margin: 0px 0px 9px 0px; }
+      .roadmap > .step > .graphic > .line.hide {
+        background: rgba(0, 0, 0, 0.1); }
+    .roadmap > .step > .label {
+      position: relative;
+      font-size: 14px;
+      margin-top: 10px;
+      text-align: center;
+      color: rgba(0, 0, 0, 0.8); }
+/* /Users/dannyvanderjagt/Github/portfolio/.cache/ui/Iphone/style.css */.iphone {
+  background-size: 100%;
+  display: inline-block; }
+  .iphone > img {
+    display: block; }
+  .iphone.size-1 {
+    width: 100px;
+    height: 180px; }
+    .iphone.size-1 > img {
+      width: 64px;
+      margin: 33px 0px 0px 21px; }
+  .iphone.size-2 {
+    width: 152px;
+    height: 255px; }
+    .iphone.size-2 > img {
+      width: 97px;
+      margin: 50px 0px 0px 32px; }
+  .iphone.size-3 {
+    width: 200px;
+    height: 350px;
+    margin-bottom: -10px; }
+    .iphone.size-3 > img {
+      width: 128px;
+      margin: 66px 0px 0px 42px; }
+  .iphone.size-4 {
+    width: 300px;
+    height: 550px;
+    margin-bottom: -45px; }
+    .iphone.size-4 > img {
+      width: 194px;
+      margin: 98px 0px 0px 62px; }
+/* /Users/dannyvanderjagt/Github/portfolio/.cache/ui/SkillsCategory/style.css */.skills-category {
+  width: 100%;
+  text-align: left;
+  padding: 20px 0px; }
+  .skills-category > .title-container {
+    width: 100%;
+    height: 90px; }
+    .skills-category > .title-container > img {
+      float: left;
+      margin: 22px;
+      height: 50px; }
+    .skills-category > .title-container > .title {
+      font-size: 1.2em;
+      padding: 25px 0px 5px 0px; }
+    .skills-category > .title-container > .description {
+      font-size: 0.8em; }
+  .skills-category > .content {
+    margin-left: 50px; }
+/* /Users/dannyvanderjagt/Github/portfolio/.cache/ui/SkillsRow/style.css */.skills-row {
+  width: 100%;
+  height: 75px;
+  margin: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 15px; }
+  .skills-row .icon-container {
+    width: 50px;
+    padding: 12px;
+    float: left;
+    margin-top: 5px; }
+    .skills-row .icon-container img {
+      width: 40px; }
+    .skills-row .icon-container .points-container {
+      width: 50px;
+      margin: 5px 0px 0px 0px; }
+      .skills-row .icon-container .points-container .point {
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        margin-left: 2px;
+        background: rgba(0, 0, 0, 0.3); }
+        .skills-row .icon-container .points-container .point.active {
+          background: #4A90E2; }
+  .skills-row .projects-container, .skills-row .since-container, .skills-row .experience-container {
+    float: left;
+    padding-top: 15px;
+    margin-left: 20px;
+    font-size: .9em; }
+  .skills-row .experience-container {
+    max-width: 440px;
+    margin-left: 30px; }
+    .skills-row .experience-container .experience {
+      line-height: 1.3em; }
+  .skills-row > .title {
+    float: left;
+    font-size: 1em;
+    width: 100px;
+    display: inline-block;
+    margin-top: 20px; }
+  .skills-row .mini-title {
+    font-size: 12px;
+    opacity: .5;
+    margin-bottom: 5px; }
+/* /Users/dannyvanderjagt/Github/portfolio/pages/me/style.scss */.header-container {
+  height: 200px; }
+
+.me-image {
+  border-radius: 50%;
+  width: 150px;
+  margin: -75px auto 0px auto;
+  border: 5px solid white; }
+
+.me-title-container {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px; }
+  .me-title-container > .me-title {
+    font-size: 1.5em; }
+  .me-title-container > .me-subtitle {
+    font-size: 1em; }
+  .me-title-container > .me-born {
+    font-size: 1em;
+    margin: 20px auto 0px auto;
+    width: 150px;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 10px; }
+
+.others {
+  width: 600px;
+  margin: 0px auto; }
+  .others > img {
+    height: 40px;
+    margin: 20px;
+    display: inline-block; }
+
+.others-title {
+  opacity: .5;
+  margin-bottom: 20px; }

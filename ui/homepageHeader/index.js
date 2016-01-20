@@ -11,7 +11,7 @@ class HomepageHeader extends Telescope.Component{
     }
 
     return (
-      <div>
+      <div className='homepage-header-container'>
         <div className='homepage-header'>
           {image}
           <div className='content'>
